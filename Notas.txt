@@ -14,3 +14,4 @@ git rm --cashed archivo.ext = elimina el archivo del tracking
 git commit -m "Mensaje commit del archivo" = Envia los cambios a un repositorio junto con un mensaje que informa esos cambios.
 git log archivo.ext = Muestra la historia del archivo
 git show archivo.ext = Muesta los cambios hechos al archivo
+git diff serial_commit1 serial_commit2 = Compara dos versiones del archivo
