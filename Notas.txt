@@ -1,5 +1,13 @@
 El comando git init = Iniciar Git en una carpeta.
+git config = Configuraciones de Git.
+git --list = Lista la configuracion por defecto de Git
 
 git status = Muestra el estado del proyecto
 
-git add archivo.ext = trackea el archivo
+git add archivo.ext = trackea el archivo para registrar sus cambios
+
+git rm --cashed archivo.ext = elimina el archivo del tracking
+
+(Aqui el archivo esta en stage)
+
+git commit -m "Mensaje commit del archivo" = Envia los cambios a un repositorio junto con un mensaje que informa esos cambios.
