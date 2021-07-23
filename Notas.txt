@@ -4,14 +4,19 @@ git config --list = Lista la configuracion por defecto de Git
 git config --global tipo.parametro "Valor del parametro" = Agrega un valor a un parametro de las configuraciones globales de Git.
 
 (Comandos de archivo en stage)
-
+ ## Staging == Area en memoria RAM donde se van almacenando los cambios ##
 git status = Muestra el estado del proyecto
-git add archivo.ext = trackea el archivo para registrar sus cambios
+git add archivo.ext = trackea el archivo para registrar sus cambios (lo lleva a staging)
 git rm --cashed archivo.ext = elimina el archivo del tracking
 
 (Comandos de archivo en repositorio)
-
+## repositorio == carpeta /.git/ ##
 git commit -m "Mensaje commit del archivo" = Envia los cambios a un repositorio junto con un mensaje que informa esos cambios.
 git log archivo.ext = Muestra la historia del archivo
 git show archivo.ext = Muesta los cambios hechos al archivo
 git diff serial_commit1 serial_commit2 = Compara dos versiones del archivo
+
+## comando checkout == trae del repositorio al directorio un archivo/cambios/version ##
+## merge es unir versiones de distintas ramas en un archivo HEAD (version más reciente del archivo en la ramas MASTER)
+## merge puede llegar a producir "conflictos entre archivos".
+ramas = {Master: master; development: experimentos; hotfix: bugfixing}
