@@ -74,9 +74,13 @@ git reset serial_commit --soft = A diferencia del hard, soft mantiene los cambio
 
     Luego de solucionar los conflictos se realiza un commit -am.
 
-    git branch -M main = Mueve todo de master a main
+   
 
 
     ################################## USO DE GITHUB ##################################
 
     git remote add origin (HTTPS) = Agrega nuestros archivos desde un repositorio remoto.
+    git remote -v = muestra las opcione del repositorio creado.
+    git branch -M main = Mueve todo de master a main
+    git push origin main = Envia el directorio de trabajo y el repositorio local al repositorio remoto
+    git pull origin main --allow-unrelated-histories = Permite fusionar el repositorio remoto con el local aunque hayan archivos no relacionados para poder hacer pull posteriormente.
