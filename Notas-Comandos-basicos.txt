@@ -54,3 +54,29 @@ git reset serial_commit --soft = A diferencia del hard, soft mantiene los cambio
 
 
     git pull //Copia acltualizada de un repositorio remoto a un repositorio y directorio local 
+
+    git commit -am "..." = Hace el add y el commit en un solo paso, siempre que los archivos hayan sido trackeados en veriosnes previas.
+
+    // RAMAS //
+
+    git branch = muestra las ramas.
+    git branch nombre = Crear una rama.
+    git checkout nombre_rama = cambia de rama.
+
+    git merge rama_a_fusionar = Fusiona una rama a la rama en la que nos encontramos actualmente.
+
+
+    // CONFLICTOS //
+
+    <<<<< = Indican donde se encuetra (hacia donde se hace el merge) | cambio actual.
+
+    >>>>> = Indincan de donde vienen (desde donde nace el conflicto) | cambio que viene.
+
+    Luego de solucionar los conflictos se realiza un commit -am.
+
+    git branch -M main = Mueve todo de master a main
+
+
+    ################################## USO DE GITHUB ##################################
+
+    git remote add origin (HTTPS) = Agrega nuestros archivos desde un repositorio remoto.
