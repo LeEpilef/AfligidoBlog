@@ -1,3 +1,4 @@
+################################## COMANDOS BASICOS ##################################
 El comando git init = Iniciar Git en una carpeta.
 git config = Configuraciones de Git.
 git config --list = Lista la configuracion por defecto de Git.
@@ -25,3 +26,31 @@ ramas = {Master: master; development: experimentos; hotfix: bugfixing}.
 
 git reset serial_commit --hard = Regresa el archivo del directorio a una versión anterior traida desde el repositorio. También borra el log.
 git reset serial_commit --soft = A diferencia del hard, soft mantiene los cambios que con add quedaron en Staging.
+
+################################## FLUJO DE TRABAJO ##################################
+
+(Flujo de trabajo respositorio local)
+    git init
+    Directorio de trabajo
+        git add (...)
+    Staging
+        git commit -m "..."
+    Repositorio local
+
+
+(Flujo de trabajo respositorio remoto)
+    git colne url //Clona un repositorio remoto a un directorio local y al repositorio local, junto con la base de datos de versiones.
+
+    Repositorio local
+        git push
+    repositorio remoto
+
+
+    Repositorio remoto
+        git fecth // Trae una actualización de un repositorio remoto a un repositorio local
+    Repositorio local
+        git merge // Fusiona la ultima versión que está en el repositorio local con los archivos en el directorio de trabajo
+    Directorio de trabajo
+
+
+    git pull //Copia acltualizada de un repositorio remoto a un repositorio y directorio local 
