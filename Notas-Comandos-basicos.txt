@@ -84,3 +84,13 @@ git reset serial_commit --soft = A diferencia del hard, soft mantiene los cambio
     git branch -M main = Mueve todo de master a main
     git push origin main = Envia el directorio de trabajo y el repositorio local al repositorio remoto
     git pull origin main --allow-unrelated-histories = Permite fusionar el repositorio remoto con el local aunque hayan archivos no relacionados para poder hacer pull posteriormente.
+
+
+    ################################## CONFIGURAR SSH ##################################
+
+    (En el home)
+
+    ssh-keygen -t rsa -b 4096 -C "correo@github" = Crea las llaves ssh publica y privada
+    eval $(ssh-agent -s) = evalua si el agente ssh funciona.
+    ssh-add /home/usuario/.ssh/id_rsa = añade la llave ssh al sistema operativo.
+    git remote set-url origin (url ssh del repositorio) = vincula el repositorio por ssh (para comprobar usar git remot -v)
