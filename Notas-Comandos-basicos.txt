@@ -94,3 +94,15 @@ git reset serial_commit --soft = A diferencia del hard, soft mantiene los cambio
     eval $(ssh-agent -s) = evalua si el agente ssh funciona.
     ssh-add /home/usuario/.ssh/id_rsa = añade la llave ssh al sistema operativo.
     git remote set-url origin (url ssh del repositorio) = vincula el repositorio por ssh (para comprobar usar git remot -v)
+    git log --all --graph --decorate --oneline = Muestra toda la historia del proyecto formateada
+
+
+    ################################## TAGS Y VERSIONES ##################################
+
+    alias nombre="comando" = almacena un comando en una variable
+    git tag = muestra los tags existentes
+    git tag -d nombre = Elimina el tag
+    git tag -a (nombre=v0.1) -m "Mensaje" versiónID = Asigna un tag a un commit (en esto caso el tag es v1.0)
+    git show-ref --tags = tag asignados a los commits
+    git push origin --tags = enviar los tags al repositorio remoto
+    git push origin :refs/tags/nombre = elimina el tag en Gitub
