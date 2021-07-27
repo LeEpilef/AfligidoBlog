@@ -4,6 +4,9 @@ body
     text-align: center;
     font-family:Arial, Helvetica, sans-serif;
     background-color:  rgb(53,70,86);
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 #cabecera
 {
@@ -11,13 +14,17 @@ body
     box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.5);
     color: rgb(223, 228, 233);
     font-weight: bold;
-    margin: 0;
-    padding: 1em;
+    margin: 10;
+    padding: 0.5em;
 }
-
+#cabecera #logo
+{
+    width: 30px;
+    vertical-align: middle;
+}
 #cabecera #tagline
 {
-    padding: 0 0 0 1em;
+    padding: 0 0 0 0;
     font-weight: normal;
     font-size: 0.8em;
 }
