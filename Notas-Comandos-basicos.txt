@@ -62,6 +62,8 @@ git reset serial_commit --soft = A diferencia del hard, soft mantiene los cambio
     git branch = muestra las ramas.
     git branch nombre = Crear una rama.
     git checkout nombre_rama = cambia de rama.
+    git show-branch = ramas que existen y su historia
+    git show-branch --all = Igual que el de arriba, pero más completo
 
     git merge rama_a_fusionar = Fusiona una rama a la rama en la que nos encontramos actualmente.
 
