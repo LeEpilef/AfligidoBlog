@@ -64,6 +64,7 @@ git reset serial_commit --soft = A diferencia del hard, soft mantiene los cambio
     git checkout nombre_rama = cambia de rama.
     git show-branch = ramas que existen y su historia
     git show-branch --all = Igual que el de arriba, pero más completo
+    git branch -r = muestra las ramas remotas | git branch -a = muestra todas las ramas.
 
     git merge rama_a_fusionar = Fusiona una rama a la rama en la que nos encontramos actualmente.
 
@@ -108,3 +109,38 @@ git reset serial_commit --soft = A diferencia del hard, soft mantiene los cambio
     git show-ref --tags = tag asignados a los commits
     git push origin --tags = enviar los tags al repositorio remoto
     git push origin :refs/tags/nombre = elimina el tag en Gitub
+
+    ################################## FORK ##################################
+
+    (GitHub) -Fork/Clone-
+    git colen url_del_repositorio = clona un repositorio remoto a un directorio local.
+    git remote add upstream url_del_repositorio = Crea una rama (upstream), fuente de datos, para hacer pull a los cambios del repositorio original y tenerlos en el directorio.
+    git pull upstream main = Trae todos los cambios a una rama upstream
+    gut commit -am "" 
+    git push origin master = Termina de fusionar las ramas.
+
+    ################################## Gitignore ##################################
+    
+    Archivo de nombre .gitignore que se utiliza para indicar que archivos y directorios no serán subidos al repositorio.
+
+    ################################## git commands ##################################
+    
+    Git stash es como decirle a un cambio “No, no avances. Ya te digo qué hacer”.
+
+    git stash = Revierte y almacena los cambios.
+    git stash drop = Descarta los cambios almacenados0
+    git stash pop = Restaura los cambios almacenados.
+    git stash list = Lista lo que se encuentra en stash.
+    git stash branch nombre_rama = envía los cambios almacenados a otra rama. 
+
+    git clean --dry-run = Elimina los archivos que estan dentro del directorio, pero no se han trackeado aún.
+
+    git cherry-pick commit_id = Incorpora un unico commit previo a a la rama en la que nos encontremos.
+
+    git commit --amend = Luego de hacer un add amend permite agregar más cambios al commit anterior.
+
+    git reflog = super git log
+
+    git grep palabra = busca entre los archivos donde aparece la palabra | el parametro -n muestra la linea en la que se encuentra la palabra dentro del archivo | -c cuenta el numero de apariciones.
+    git log -S "palabra" = Busca entre los commits en cuales se uso una palabra.
+
